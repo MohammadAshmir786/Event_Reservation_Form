@@ -1,0 +1,197 @@
+#header #navbar {
+    padding: 0.8rem 0;
+    background-color: #0f89fa;
+}
+
+.form-wrapper {
+    border: none;
+    box-shadow: 0px 0px 40px 11px rgb(120 157 236 / 40%);
+}
+
+.form-section {
+    border: none;
+    box-shadow: 0px 0px 15px 6px rgb(120 157 236 / 40%);
+    background-color: #e5eefd;
+}
+
+#add-event-form .form-section {
+    min-height: 462px;
+}
+
+label {
+    color: #0F89FA;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.form-control,
+.form-control:focus {
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: inset -6px -6px 9px #ffffff, inset 6px 6px 9px rgb(120 157 236 / 40%);
+    border: none;
+}
+
+textarea.form-control,
+textarea.form-control:focus {
+    height: 200px;
+    padding-top: 15px;
+}
+
+.add-event-btn {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: #ffca2c;
+    border: 0.1875rem solid #ffca2c !important;
+    color: #FFFFFF;
+    font-size: 0.9375rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
+    transition: all 0.4s ease-out 0s;
+}
+
+.add-event-btn:hover {
+    background-color: transparent !important;
+    color: #ffca2c !important;
+}
+
+
+/* Event list */
+
+.remove-event-btn {
+    background-color: #bb2d3b;
+    border-color: #bb2d3b !important;
+    line-height: 1;
+}
+
+.remove-event-btn:hover {
+    background-color: #ffffff;
+    color: #bb2d3b !important;
+}
+
+.event-list thead,
+.event-list th,
+.event-list tbody,
+.event-list tr,
+.event-list td,
+.event-list tfoot {
+    border-color: #0F89FA !important;
+}
+
+.event-list form {
+    padding: 0px;
+}
+
+.event-list .table {
+    margin: 0;
+    border: 1px solid #0F89FA;
+}
+
+.event-list .table tr th {
+    color: #0F89FA;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* Form Validation Error */
+
+#add-event-form p {
+    color: #B94A48 !important;
+}
+
+.error {
+    margin: 0 !important;
+    color: #B94A48 !important;
+    background-color: #F2DEDE !important;
+    border: 1px solid #EED3D7 !important;
+}
+
+@media (max-width: 768px) {
+    .event-list table,
+    .event-list thead,
+    .event-list tbody,
+    .event-list th,
+    .event-list td,
+    .event-list tr {
+        display: block;
+    }
+    .event-list thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .event-list tr {
+        margin: 0 0 1rem 0;
+    }
+    .event-list tr:nth-child(odd) {
+        background: #e5eefd;
+    }
+    .event-list .resp-table {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        font-size: 16px;
+        padding-right: 14px;
+    }
+    .event-list .resp-table:before {
+        position: absolute;
+        top: 8px;
+        left: 14px;
+        width: 45%;
+        padding-right: 14px;
+        white-space: nowrap;
+        text-align: left;
+        color: #0F89FA;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .event-list .resp-table:nth-of-type(1):before {
+        content: "Title";
+    }
+    .event-list .resp-table:nth-of-type(2):before {
+        content: "Start Date time";
+    }
+    .event-list .resp-table:nth-of-type(3):before {
+        content: "End Date time";
+    }
+    .event-list .resp-table:nth-of-type(4):before {
+        content: "Timezone";
+    }
+    .event-list .resp-table:nth-of-type(5):before {
+        content: "Description";
+    }
+    .created-event-list tr {
+        margin: 0;
+    }
+    .created-event-list .resp-table:nth-of-type(1):before {
+        content: "Serial Number";
+    }
+    .created-event-list .resp-table:nth-of-type(2):before {
+        content: "Title";
+    }
+    .created-event-list .resp-table:nth-of-type(3):before {
+        content: "Start Date time";
+    }
+    .created-event-list .resp-table:nth-of-type(4):before {
+        content: "End Date time";
+    }
+    .created-event-list .resp-table:nth-of-type(5):before {
+        content: "Timezone";
+    }
+    .created-event-list .resp-table:nth-of-type(6):before {
+        content: "Description";
+    }
+    .event-list .respfoot {
+        display: block;
+        border: none;
+    }
+    #add-event-form .form-section {
+        min-height: auto;
+    }
+}
